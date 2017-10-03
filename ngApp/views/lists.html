@@ -1,0 +1,15 @@
+<div ng-controller="actorsController">
+  <h2>There are {{actors.length}} actors</h2>
+  <ul>
+    <li ng-repeat="actor in actors">{{actor.firstName}} {{actor.lastName}}</li>
+  </ul>
+</div>
+
+<hr/>
+
+<div ng-controller="moviesController">
+  <h2>There are {{movies.length}} movies</h2>
+  <ul>
+    <li ng-repeat="movie in movies">{{movie.title}}</li>
+  </ul>
+</div>

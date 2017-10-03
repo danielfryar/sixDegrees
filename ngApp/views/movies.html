@@ -1,0 +1,13 @@
+movies.html
+
+<div ng-controller="moviesController">
+  <h2>There are {{movies.length}} movies</h2>
+  <ul>
+    <li ng-repeat="movie in movies">{{movie.title}}</li>
+  </ul>
+
+  <form ng-submit="addMovie()">
+    <input ng-model="title">
+    <button type="submit">Add</button>
+  </form>
+</div>

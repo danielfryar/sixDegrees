@@ -1,0 +1,14 @@
+actors.html
+
+<div ng-controller="actorsController">
+  <h2>There are {{actors.length}} actors</h2>
+  <ul>
+    <li ng-repeat="actor in actors">{{actor.firstName}} {{actor.lastName}}</li>
+  </ul>
+
+  <form ng-submit="addActor()">
+    <input ng-model="firstName">
+    <input ng-model="lastName">
+    <button type="submit">Add</button>
+  </form>
+</div>

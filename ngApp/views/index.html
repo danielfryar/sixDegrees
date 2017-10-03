@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html ng-app="sixDegrees">
+  <head>
+    <meta charset="utf-8">
+    <title>Hello</title>
+  </head>
+  <body>
+
+    <a ui-sref="home">home</a>
+    <a ui-sref="actors">actors</a>
+    <a ui-sref="movies">movies</a>
+    <a ui-sref="link">link</a>
+    <div ui-view></div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-resource.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.6/angular-route.js"></script>
+    <script src="//unpkg.com/@uirouter/angularjs/release/angular-ui-router.js"></script>
+
+    <script type="text/javascript" src="/app/app.js"></script>
+    <script type="text/javascript" src="/app/controllers/actors-controller.js"></script>
+    <script type="text/javascript" src="/app/controllers/movies-controller.js"></script>
+    </script>
+  </body>
+</html>
