@@ -12,3 +12,10 @@ module.exports.list = (req, res) => {
     res.json(results);
   });
 }
+
+module.exports.getActor = (req,res) => {
+	let id = req.body.id;
+	Actor.findOne({_id:id}, (err, result) => {
+    res.json(result);
+  });
+}

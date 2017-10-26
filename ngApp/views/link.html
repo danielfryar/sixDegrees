@@ -1,1 +1,20 @@
-link.html
+<form>
+  <div ng-controller="actorsController">
+    <h2>There are {{actors.length}} actors</h2>
+    <div  ng-repeat="actor in actors">
+      <input type="radio" name="actorid" value="{{actor._id}}">
+      {{actor.firstName}} {{actor.lastName}}
+    </div>
+  </div>
+
+  <hr/>
+
+  <div ng-controller="moviesController">
+    <h2>There are {{movies.length}} movies</h2>
+    <div  ng-repeat="movie in movies">
+      <input type="radio" name="movieid" value="{{movie._id}}">
+      {{movie.title}}
+    </div>
+  </div>
+  <button type="button" ng-submit="link(actorid.value, movieid.value)">Link</button>
+</form>

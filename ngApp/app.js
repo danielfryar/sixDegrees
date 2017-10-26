@@ -12,7 +12,7 @@ app.config(($stateProvider) => {
       templateUrl: '/app/views/actors.html'
     })
     .state('movies', {
-      url: '/actors',
+      url: '/movies',
       templateUrl: '/app/views/movies.html'
     })
     .state('link', {
